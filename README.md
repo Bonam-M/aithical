@@ -1,7 +1,7 @@
 # aithical
 <img
-  src="https://github.com/Bonam-M/aithical/blob/main/src/aithical_summary.png"
-  alt="Alt text"
+  src="https://github.com/Bonam-M/aithical/blob/main/src/aithical_summary.jpg"
+  alt="Aithical"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 200px">
 
