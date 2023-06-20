@@ -4,27 +4,6 @@ from transformers import pipeline
 import json
 from flask import Flask
 
-'''
-source api/venv/bin/activate
-
-in venv, install:
-
-pip install pandas
-pip install torch
-pip install transformers
-pip install flask
-
-pip install flask flask-socketio eventlet
-
-npm install socket.io-client
-
-
---
-
-npm install socket.io-client
-
-
-'''
 
 app = Flask(__name__)
 
@@ -44,8 +23,9 @@ def get_matching_regulations(regulations_df, predicted_category):
     return matching_regulations
 
 def extract_regulation_and_guideline(matching_regulations):
-    regulation = None
-    guideline = None
+    regulations = []
+    guidelines = []
+    threshold = 2
     
     for _, row in matching_regulations.iterrows():
         reg_title = row['Title']
@@ -56,10 +36,24 @@ def extract_regulation_and_guideline(matching_regulations):
         reg_url = row['Official source']
 
         if reg_type == 'Regulation':
-            regulation = (reg_title, reg_summary, reg_extract, reg_source, reg_url)
+            regulation = {
+                "title": reg_title,
+                "summary": reg_summary,
+                "extract": reg_extract,
+                "source": reg_source,
+                "link": reg_url  
+            }
+            regulations.append(regulation)
         elif reg_type == 'Guideline':
-            guideline = (reg_title, reg_summary, reg_extract, reg_source, reg_url)
-    return regulation, guideline
+            guideline = {
+                "title": reg_title,
+                "summary": reg_summary,
+                "extract": reg_extract,
+                "source": reg_source,
+                "link": reg_url  
+            }
+            guidelines.append(guideline)
+    return regulations, guidelines
 
 def display_results(predicted_category, regulation, guideline):
     output_dict = {
@@ -90,23 +84,33 @@ def display_results(predicted_category, regulation, guideline):
         output_dict["guidelines"].append(guideline_dict)
 
     json_output = json.dumps(output_dict, indent=4)
-    print(json_output)
-
     return json_output
 
 def classify_display(user_input):
+
+    print("*--*--*--*--*--*--*--*--*--*--*--*--*")
+    print("Starting to classify user input:", user_input)
+
     file_name = 'Summary-Regulations-Guidelines.csv'
-    #user_input = input("Enter your text: ")
-    #user_input = "vroom vroom big cars on the road cars on the streets"
-    categories = ['Autonomous Vehicle', 'Education', 'Healthcare', 'Agriculture', 'Environment', 'Finance']
+    categories = ['Autonomous Vehicle', 'Education', 'Healthcare', 'Agriculture', 'Finance']
 
     regulations_df, category_values = load_regulations(file_name)
+    print("Regulations loaded and mapped to categories")
 
     predicted_category = classify_input(user_input, categories)
+    print("Predicted Category:", predicted_category)
 
     matching_regulations = get_matching_regulations(regulations_df, predicted_category)
+    regulations, guidelines = extract_regulation_and_guideline(matching_regulations)
+    print("Creating Output Dictionary from matched regulations and guidelines:")
 
-    regulation, guideline = extract_regulation_and_guideline(matching_regulations)
+    output_dict = {
+        "regulations": regulations,
+        "guidelines": guidelines
+    }
 
+    print("Number of Regulations:", len(output_dict["regulations"]))
+    print("Number of Guidelines:", len(output_dict["guidelines"]))
+    print("*--*--*--*--*--*--*--*--*--*--*--*--*")
 
-    return display_results(predicted_category, regulation, guideline)
+    return output_dict

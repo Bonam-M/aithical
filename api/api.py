@@ -1,5 +1,5 @@
 import time
-from flask import Flask, request, redirect, url_for, jsonify
+from flask import Flask, request, redirect, url_for, jsonify, session
 from zero_shot import classify_display
 
 from random import randrange
@@ -9,33 +9,36 @@ import random
 
 
 app = Flask(__name__)
+app.secret_key = 'aithical_key'
 
 @app.route('/api/projectDescription', methods=['POST'])
 def send_input():
-    print("send input")
     form_data = request.get_json()# request.form
-    print(form_data)
     text_input = form_data['project_description_input']
-    print(text_input)
-
-    return redirect(url_for('get_output_dict', text_input=text_input))
-
-
-@app.route('/api/output_dict')
-def get_output_dict():
-
-    # todo: call and feed into classify display
-    text_input = request.args.get('text_input')
-
-    if text_input is None:
-        text_input = "This is an automated car project."
-
-    print("")
-    print(text_input)
-    print("JANVI")
-
     output_dict = classify_display(text_input)
-
-    
-
+    #print(output_dict)
+    #print(type(output_dict))
     return output_dict
+
+
+'''
+source api/venv/Scripts/activate
+
+in venv, install:
+
+pip install pandas
+pip install torch
+pip install transformers
+pip install flask
+
+pip install flask flask-socketio eventlet (do not need))
+
+npm install socket.io-client (do not need)
+
+
+--
+
+npm install socket.io-client (do not need))
+
+
+'''

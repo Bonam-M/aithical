@@ -13,15 +13,15 @@ function About(){
   
           <a href="home" class="header_img"
             ><img
-              src="https://wp.uthscsa.edu/mikiten-graduate-symposium/wp-content/uploads/sites/158/2019/02/placeholder.com-logo3.jpg"
-          /></a>
+            src="https://i.imgur.com/gUzP4ml.png" alt='Logo loading'
+        /></a>
   
   
           
-          <a href="regulations_and_guidelines" class="header_link header_page">Regulations and Guidelines</a>
-          <a href="fairness_metrics" class="header_link">Fairness Metrics</a>
+          <a href="regulations_and_guidelines" class="header_link">Project Analysis</a> 
+          <a href="ethical_aiprojects" class="header_link">Ethical AI Projects</a>         
           <div class="header_spacer"></div>
-          <a href="about" class="header_link">About</a>
+          <a href="about" class="header_link header_page">About</a>
           <a href="connect" class="header_link">Connect</a>
         </div>
       </div>
@@ -32,42 +32,39 @@ function About(){
             About
           </h1>
           <h2>
-            Welcome to Aithical,
+            Welcome to <span id="green_logo">ai</span>thical
           </h2>
           <p>
-            <b>an easy solution to navigate the complex landscape of AI ethics</b>. 
+            <b>Ethical AI, made simple.</b>
             <br /><br />
-            We understand the critical importance of integrating ethics into AI development processes.
-            Whether you are a seasoned AI practitioner or just starting your journey, 
-            Aithical provides you with the resources you need to build ethical AI solutions.
+            As AI innovation keeps growing, we at <span id="green_logo">ai</span>thical recognize ethical considerations 
+            can sometimes get lost in the development process. 
+            That’s why we do the hard work for you; by compiling relevant AI ethical guidelines and project frameworks in one place, you can focus less on searching and more on creating. 
+            Whether you're a researcher, student, developer, data scientist or business professional, <span id="green_logo">ai</span>thical is a companion for AI ethics implementation. 
+            <br /><br />         
+      
+          </p>
+          <h2>
+            Our Mission
+          </h2>
+          <p>
+            At <span id="green_logo">ai</span>thical, our mission is to <b> simplify the integration of ethics in AI projects development.
+ </b>
+            <br /><br />
+            By providing the newest regulations, guidelines, and project frameworks, we strive to create a future where human good is at the center of every algorithm.
             <br /><br />         
   
           </p>
           <h2>
-            Our mission
-          </h2>
-          <p>
-            At aithical, our mission is to <b> simplify the process of incorporating ethics into AI development </b>. 
-            <br /><br />
-            By providing a curated collection of regulations, guidelines, and innovative tools, we strive to create 
-            a future where AI benefits society while upholding ethical principles and safeguarding human values.
-            <br /><br />         
-  
-          </p>
-          <h2>
-            Aithical: your trusted AI ethics companion.
+            How it works
           </h2>
           <p class="mob4">
-            By leveraging Aithical, you gain access to a wealth of relevant resources that cover 
-            a wide range of topics, including data privacy, algorithmic transparency, bias mitigation and more.
-            Whether you're a researcher, student, developer, data scientist or business professional, 
-            Aithical equips you with <b>relevant resources that can assist you in understanding the legal and 
-            ethical frameworks surrounding AI technologies</b>. 
-            <br /><br />
-            We believe that by equipping AI practitioners with the right knowledge and tools, 
-            we can collectively shape a future where AI is used responsibly and ethically. 
-            <br /><br />
-            Join us on this ethical AI journey and let Aithical be your trusted AI ethics companion.
+          <span id="green_logo">ai</span>thical utilizes zero-shot classification model provided in Facebook’s <a href="https://huggingface.co/facebook/bart-large"> BART Large Language Model</a> in order to associate  
+          natural language descriptions of projects to an appropriate category. Then we matched the relevant AI regulations, ethical guidelines and projects frameworks.         
+          <br></br>
+          <br></br>
+          Keep up to date with new changes
+          on our <a href="https://github.com/Bonam-M/aithical">GitHub Repo!</a>
           </p>
         </div>
       </div>
