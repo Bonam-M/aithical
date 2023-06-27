@@ -9,8 +9,8 @@ Aithical recommends relevant ethical guidelines to AI practitioners in order sim
 
 Here is static demo of the webapp displaying the main features. PDF file
 <image
-  src="https://github.com/Bonam-M/aithical/blob/main/src/aithical-wireframe.pdf"
-  alt="Aithical"
+  src="https://bonam-m.github.io/aithical/blob/main/src/aithical-wireframe.pdf"
+  alt="Aithical Static Demo"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 200px">
 
