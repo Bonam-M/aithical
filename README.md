@@ -7,9 +7,9 @@
 
 Aithical recommends relevant ethical guidelines to AI practitioners in order simplify the implementation of ethics in the development of AI solutions.
 
-Here is static demo of the webapp displaying the main features. PDF file
+Here is static demo of the webapp displaying the main features. Github Pages file
 <image
-  src="https://bonam-m.github.io/aithical/blob/main/src/aithical-wireframe.pdf"
+  src="https://bonam-m.github.io/aithical/src/aithical-webpages.png"
   alt="Aithical Static Demo"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 200px">
