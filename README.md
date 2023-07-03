@@ -1,5 +1,8 @@
 # aithical
-Aithical was created as part of the [AI4Good Lab program](https://www.ai4goodlab.com/), a research program supporting the creation of AI technologies for social good.
+[Aithical](https://docs.google.com/presentation/d/1M1JwmeumfGc09z4RnCjGhZI1PpGyf3poL8R27tYedbc/edit?usp=sharing) was created as part of the [AI4Good Lab program](https://www.ai4goodlab.com/), a research program supporting the creation of AI technologies for social good.
+
+## Here is a static demo
+Check out the static [aithical webapp](https://docs.google.com/presentation/d/1M1JwmeumfGc09z4RnCjGhZI1PpGyf3poL8R27tYedbc/edit?usp=sharing) displaying the main features.
 
 ## What is aithical?
 <img
@@ -13,10 +16,7 @@ Aithical was created as part of the [AI4Good Lab program](https://www.ai4goodlab
   src="https://bonam-m.github.io/aithical/src/aithical_summary2.jpg"
   alt="Aithical"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 200px">
-
-## Here is a static demo
-Check out the static webapp [aithical webapp](https://docs.google.com/presentation/d/1M1JwmeumfGc09z4RnCjGhZI1PpGyf3poL8R27tYedbc/edit?usp=sharing) displaying the main features.  
+  style="display: inline-block; margin: 0 auto; max-width: 200px">  
 
 
 ## How does it work?
