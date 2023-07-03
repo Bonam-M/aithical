@@ -1,5 +1,5 @@
 # aithical
-Aithical was created as part of the [AI4Good Lab program](https://www.ai4goodlab.com/), a program designed to open doors for those who have historically been underrepresented in the AI industry.
+Aithical was created as part of the [AI4Good Lab program](https://www.ai4goodlab.com/), a research program supporting the creation of AI technologies for social good.
 
 ## What is aithical?
 <img
