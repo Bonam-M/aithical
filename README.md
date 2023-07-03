@@ -18,14 +18,6 @@ Check out the static [aithical webapp](https://docs.google.com/presentation/d/1M
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 200px">  
 
-
-## How does it work?
-<img
-  src="https://bonam-m.github.io/aithical/src/aithical_summary2.jpg"
-  alt="Aithical"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 200px">
-
 ## What can you find in this repo?
 Here is a description of the content of this repository.
 
