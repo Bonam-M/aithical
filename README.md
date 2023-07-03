@@ -16,6 +16,9 @@ Aithical was created as part of the [AI4Good Lab program](https://www.ai4goodlab
   style="display: inline-block; margin: 0 auto; max-width: 200px">
 
 ## Here is a static demo
+my pdf file
+<object data="https://bonam-m.github.io/aithical/src/aithical_wireframe.pdf" width="1000" height="1000" type='application/pdf'></object>
+
 Here is a wireframe of the webapp displaying the main features.
 <image
   src="https://bonam-m.github.io/aithical/src/aithical_wireframe.png"
