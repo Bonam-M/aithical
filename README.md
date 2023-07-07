@@ -18,14 +18,14 @@ Check out the static [aithical webapp](https://docs.google.com/presentation/d/1M
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 200px">  
 
-## What can you find in this repo?
+### What can you find in this repo?
 Here is a description of the content of this repository.
 
-### Frontend and backend components
+#### Frontend and backend components
 In this repo, you will find the frontend and backend components (see _api/api.py_) so that you can run the prototype on your local machine.
 Make sure to install the required packages: Node.JS; Python 3.11; Flask; Pandas; Numpy; Transformers and all the other packages listed in the file _requirements.txt_
 
-### Notebook containing the model evaluation scripts
+#### Notebook containing the model evaluation scripts
 Since we used the pre-trained model [Zero-Shot Classification](https://huggingface.co/tasks/zero-shot-classification) to implement our solution, we had to evaluate the model performance on our test data to validate that the accuracy of the model predictions was acceptable for our project. A copy of the Google Colab notebook used for the experiments can be found in this repo  (see _api/gradio-app/aithical-zero-shot.ipynb_) so that you can easily reproduce a similar experiment on your own.
 
 ### Gradio app for easy interaction with the model
