@@ -1,8 +1,8 @@
 # aithical
-[Aithical](https://docs.google.com/presentation/d/1M1JwmeumfGc09z4RnCjGhZI1PpGyf3poL8R27tYedbc/edit?usp=sharing) was created as part of the [AI4Good Lab program](https://www.ai4goodlab.com/), a research program supporting the creation and use of AI technologies for social good.
+[Aithical](https://drive.google.com/file/d/1-5O77RFsMbQVyQ275lTW4aNSPMpARSI-/view?usp=sharing) was created as part of the [AI4Good Lab program](https://www.ai4goodlab.com/), a research program supporting the creation and use of AI technologies for social good.
 
 ## Here is a static demo
-Check out the static [aithical webapp](https://docs.google.com/presentation/d/1M1JwmeumfGc09z4RnCjGhZI1PpGyf3poL8R27tYedbc/edit?usp=sharing) displaying the main features.
+Check out the static [aithical webapp](https://drive.google.com/file/d/1-5O77RFsMbQVyQ275lTW4aNSPMpARSI-/view?usp=sharing) displaying the main features.
 
 ## What is aithical?
 <img
